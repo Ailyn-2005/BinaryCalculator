@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class BinaryCalculator {
+    
+    // Method to convert a number form any base to decimal
+    public static int toDecimal(String number, int base) {
+        return Integer.parseInt(number, base);
+    }
+    
+    // Method to convert a decimal number to any base
+    public static String fromDecimal(int deciamNumber, int base) {
+        if (base == 2) {
+            int decimalNumber = 0;
+            return Integer. toBinaryString(decimalNumber); // Binary
+        } else if (base == 8) {
+            int decimalNumber = 0;
+            return Integer.toOctalString(decimalNumber); // Octal   
+        } else if (base == 16) {
+            int decimalNumber = 0;
+            return Integer.toHexString(decimalNumber).toUpperCase();// Hexadecimal
+        } else {
+            int decimalNumber = 0;
+            return Integer.toString(decimalNumber); // Decimal
+        }
+    }
+    
+    // Method to convert a number from any base to all other bases
+    public static void convertNumber(String number, int inputBase) {
+        // Convert the input number to decimal first
+        int decimalNumber = toDecimal(number, inputBase);
+        
+    // 
+    }  
+}
